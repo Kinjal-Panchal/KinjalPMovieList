@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E3A9AD0282C0AA500DB5633 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A9ACF282C0AA500DB5633 /* AppDelegate.swift */; };
+		1E3A9AD2282C0AA500DB5633 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A9AD1282C0AA500DB5633 /* SceneDelegate.swift */; };
+		1E3A9AD4282C0AA500DB5633 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A9AD3282C0AA500DB5633 /* ViewController.swift */; };
+		1E3A9AD7282C0AA500DB5633 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E3A9AD5282C0AA500DB5633 /* Main.storyboard */; };
+		1E3A9ADA282C0AA500DB5633 /* KinjalPractical.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A9AD8282C0AA500DB5633 /* KinjalPractical.xcdatamodeld */; };
+		1E3A9ADC282C0AA700DB5633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E3A9ADB282C0AA700DB5633 /* Assets.xcassets */; };
+		1E3A9ADF282C0AA700DB5633 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E3A9ADD282C0AA700DB5633 /* LaunchScreen.storyboard */; };
+		1E3A9AE8282C123C00DB5633 /* MovieListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A9AE7282C123C00DB5633 /* MovieListVC.swift */; };
+		1E3A9AEB282C125300DB5633 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A9AEA282C125300DB5633 /* DetailVC.swift */; };
+		1E3A9AED282C126A00DB5633 /* MovieTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A9AEC282C126A00DB5633 /* MovieTblCell.swift */; };
+		1E3A9AEF282C14D400DB5633 /* MovieListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A9AEE282C14D400DB5633 /* MovieListModel.swift */; };
+		1E3A9AF2282C178700DB5633 /* WebService+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A9AF1282C178700DB5633 /* WebService+Extension.swift */; };
+		1E3A9AF9282C192F00DB5633 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A9AF8282C192F00DB5633 /* Utility.swift */; };
+		1E3A9AFB282C1AA800DB5633 /* UrlConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A9AFA282C1AA800DB5633 /* UrlConstant.swift */; };
+		1E3A9AFD282C1C6700DB5633 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A9AFC282C1C6700DB5633 /* MovieViewModel.swift */; };
+		1E3A9B01282C399800DB5633 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A9B00282C399800DB5633 /* Extension.swift */; };
+		1E45B65E282C45DF006803C5 /* MoviedetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E45B65D282C45DF006803C5 /* MoviedetailModel.swift */; };
+		1E45B660282C45F8006803C5 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E45B65F282C45F8006803C5 /* DetailViewModel.swift */; };
+		1E45B673282C5FD6006803C5 /* Detail+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E45B66F282C5FD6006803C5 /* Detail+CoreDataClass.swift */; };
+		1E45B674282C5FD6006803C5 /* Detail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E45B670282C5FD6006803C5 /* Detail+CoreDataProperties.swift */; };
+		1E45B679282C602C006803C5 /* Movies+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E45B677282C602C006803C5 /* Movies+CoreDataClass.swift */; };
+		1E45B67A282C602C006803C5 /* Movies+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E45B678282C602C006803C5 /* Movies+CoreDataProperties.swift */; };
+		CECAD71119A0DC08958C8F31 /* Pods_KinjalPractical.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 361CCBE2E24A1D1D6AEC3F72 /* Pods_KinjalPractical.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D33F6988239658CA2C6E3A4 /* Pods-KinjalPractical.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinjalPractical.release.xcconfig"; path = "Target Support Files/Pods-KinjalPractical/Pods-KinjalPractical.release.xcconfig"; sourceTree = "<group>"; };
+		1E3A9ACC282C0AA500DB5633 /* KinjalPractical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinjalPractical.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E3A9ACF282C0AA500DB5633 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1E3A9AD1282C0AA500DB5633 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1E3A9AD3282C0AA500DB5633 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1E3A9AD6282C0AA500DB5633 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1E3A9AD9282C0AA500DB5633 /* KinjalPractical.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KinjalPractical.xcdatamodel; sourceTree = "<group>"; };
+		1E3A9ADB282C0AA700DB5633 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E3A9ADE282C0AA700DB5633 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1E3A9AE0282C0AA700DB5633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E3A9AE7282C123C00DB5633 /* MovieListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListVC.swift; sourceTree = "<group>"; };
+		1E3A9AEA282C125300DB5633 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		1E3A9AEC282C126A00DB5633 /* MovieTblCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTblCell.swift; sourceTree = "<group>"; };
+		1E3A9AEE282C14D400DB5633 /* MovieListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListModel.swift; sourceTree = "<group>"; };
+		1E3A9AF1282C178700DB5633 /* WebService+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebService+Extension.swift"; sourceTree = "<group>"; };
+		1E3A9AF8282C192F00DB5633 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		1E3A9AFA282C1AA800DB5633 /* UrlConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlConstant.swift; sourceTree = "<group>"; };
+		1E3A9AFC282C1C6700DB5633 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		1E3A9B00282C399800DB5633 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		1E45B65D282C45DF006803C5 /* MoviedetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviedetailModel.swift; sourceTree = "<group>"; };
+		1E45B65F282C45F8006803C5 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		1E45B66F282C5FD6006803C5 /* Detail+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Detail+CoreDataClass.swift"; path = "KinjalPractical/CoreDataModel/Detail+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		1E45B670282C5FD6006803C5 /* Detail+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Detail+CoreDataProperties.swift"; path = "KinjalPractical/CoreDataModel/Detail+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		1E45B677282C602C006803C5 /* Movies+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Movies+CoreDataClass.swift"; path = "KinjalPractical/CoreDataModel/Movies+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		1E45B678282C602C006803C5 /* Movies+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Movies+CoreDataProperties.swift"; path = "KinjalPractical/CoreDataModel/Movies+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		361CCBE2E24A1D1D6AEC3F72 /* Pods_KinjalPractical.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KinjalPractical.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A11C424EE9722831A3C0B0AC /* Pods-KinjalPractical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinjalPractical.debug.xcconfig"; path = "Target Support Files/Pods-KinjalPractical/Pods-KinjalPractical.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E3A9AC9282C0AA500DB5633 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CECAD71119A0DC08958C8F31 /* Pods_KinjalPractical.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A186B533A288BF60600F426 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A11C424EE9722831A3C0B0AC /* Pods-KinjalPractical.debug.xcconfig */,
+				1D33F6988239658CA2C6E3A4 /* Pods-KinjalPractical.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1E3A9AC3282C0AA500DB5633 = {
+			isa = PBXGroup;
+			children = (
+				1E3A9ACE282C0AA500DB5633 /* KinjalPractical */,
+				1E3A9ACD282C0AA500DB5633 /* Products */,
+				1A186B533A288BF60600F426 /* Pods */,
+				5AA3BBEBA6A5A8423B996B84 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1E3A9ACD282C0AA500DB5633 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E3A9ACC282C0AA500DB5633 /* KinjalPractical.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E3A9ACE282C0AA500DB5633 /* KinjalPractical */ = {
+			isa = PBXGroup;
+			children = (
+				1E45B67B282C60DB006803C5 /* CoreDataManager */,
+				1E45B66A282C5F4C006803C5 /* CoreDataModel */,
+				1E3A9AF7282C190B00DB5633 /* Utilities */,
+				1E3A9AF0282C174C00DB5633 /* WebServiceHelper */,
+				1E3A9AE9282C124300DB5633 /* Detail */,
+				1E3A9AE6282C122200DB5633 /* MovieList */,
+				1E3A9ACF282C0AA500DB5633 /* AppDelegate.swift */,
+				1E3A9AD1282C0AA500DB5633 /* SceneDelegate.swift */,
+				1E3A9AD3282C0AA500DB5633 /* ViewController.swift */,
+				1E3A9AD5282C0AA500DB5633 /* Main.storyboard */,
+				1E3A9ADB282C0AA700DB5633 /* Assets.xcassets */,
+				1E3A9ADD282C0AA700DB5633 /* LaunchScreen.storyboard */,
+				1E3A9AE0282C0AA700DB5633 /* Info.plist */,
+				1E3A9AD8282C0AA500DB5633 /* KinjalPractical.xcdatamodeld */,
+			);
+			path = KinjalPractical;
+			sourceTree = "<group>";
+		};
+		1E3A9AE6282C122200DB5633 /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				1E3A9AEC282C126A00DB5633 /* MovieTblCell.swift */,
+				1E3A9AE7282C123C00DB5633 /* MovieListVC.swift */,
+				1E3A9AEE282C14D400DB5633 /* MovieListModel.swift */,
+				1E3A9AFC282C1C6700DB5633 /* MovieViewModel.swift */,
+			);
+			path = MovieList;
+			sourceTree = "<group>";
+		};
+		1E3A9AE9282C124300DB5633 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				1E3A9AEA282C125300DB5633 /* DetailVC.swift */,
+				1E45B65D282C45DF006803C5 /* MoviedetailModel.swift */,
+				1E45B65F282C45F8006803C5 /* DetailViewModel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		1E3A9AF0282C174C00DB5633 /* WebServiceHelper */ = {
+			isa = PBXGroup;
+			children = (
+				1E3A9AF1282C178700DB5633 /* WebService+Extension.swift */,
+				1E3A9AFA282C1AA800DB5633 /* UrlConstant.swift */,
+			);
+			path = WebServiceHelper;
+			sourceTree = "<group>";
+		};
+		1E3A9AF7282C190B00DB5633 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1E3A9AF8282C192F00DB5633 /* Utility.swift */,
+				1E3A9B00282C399800DB5633 /* Extension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1E45B66A282C5F4C006803C5 /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				1E45B677282C602C006803C5 /* Movies+CoreDataClass.swift */,
+				1E45B678282C602C006803C5 /* Movies+CoreDataProperties.swift */,
+				1E45B66F282C5FD6006803C5 /* Detail+CoreDataClass.swift */,
+				1E45B670282C5FD6006803C5 /* Detail+CoreDataProperties.swift */,
+			);
+			path = CoreDataModel;
+			sourceTree = "<group>";
+		};
+		1E45B67B282C60DB006803C5 /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreDataManager;
+			sourceTree = "<group>";
+		};
+		5AA3BBEBA6A5A8423B996B84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				361CCBE2E24A1D1D6AEC3F72 /* Pods_KinjalPractical.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E3A9ACB282C0AA500DB5633 /* KinjalPractical */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E3A9AE3282C0AA700DB5633 /* Build configuration list for PBXNativeTarget "KinjalPractical" */;
+			buildPhases = (
+				797EE81EEFD86CAA37283AC1 /* [CP] Check Pods Manifest.lock */,
+				1E3A9AC8282C0AA500DB5633 /* Sources */,
+				1E3A9AC9282C0AA500DB5633 /* Frameworks */,
+				1E3A9ACA282C0AA500DB5633 /* Resources */,
+				6E582405F72EF1B96298E7E4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KinjalPractical;
+			productName = KinjalPractical;
+			productReference = 1E3A9ACC282C0AA500DB5633 /* KinjalPractical.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E3A9AC4282C0AA500DB5633 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					1E3A9ACB282C0AA500DB5633 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 1E3A9AC7282C0AA500DB5633 /* Build configuration list for PBXProject "KinjalPractical" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E3A9AC3282C0AA500DB5633;
+			productRefGroup = 1E3A9ACD282C0AA500DB5633 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E3A9ACB282C0AA500DB5633 /* KinjalPractical */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E3A9ACA282C0AA500DB5633 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E3A9ADF282C0AA700DB5633 /* LaunchScreen.storyboard in Resources */,
+				1E3A9ADC282C0AA700DB5633 /* Assets.xcassets in Resources */,
+				1E3A9AD7282C0AA500DB5633 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E582405F72EF1B96298E7E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KinjalPractical/Pods-KinjalPractical-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KinjalPractical/Pods-KinjalPractical-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KinjalPractical/Pods-KinjalPractical-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		797EE81EEFD86CAA37283AC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KinjalPractical-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E3A9AC8282C0AA500DB5633 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E45B674282C5FD6006803C5 /* Detail+CoreDataProperties.swift in Sources */,
+				1E3A9ADA282C0AA500DB5633 /* KinjalPractical.xcdatamodeld in Sources */,
+				1E3A9AD4282C0AA500DB5633 /* ViewController.swift in Sources */,
+				1E3A9AD0282C0AA500DB5633 /* AppDelegate.swift in Sources */,
+				1E3A9AFB282C1AA800DB5633 /* UrlConstant.swift in Sources */,
+				1E3A9AE8282C123C00DB5633 /* MovieListVC.swift in Sources */,
+				1E3A9AFD282C1C6700DB5633 /* MovieViewModel.swift in Sources */,
+				1E3A9AEF282C14D400DB5633 /* MovieListModel.swift in Sources */,
+				1E45B679282C602C006803C5 /* Movies+CoreDataClass.swift in Sources */,
+				1E3A9AED282C126A00DB5633 /* MovieTblCell.swift in Sources */,
+				1E3A9AD2282C0AA500DB5633 /* SceneDelegate.swift in Sources */,
+				1E45B65E282C45DF006803C5 /* MoviedetailModel.swift in Sources */,
+				1E3A9B01282C399800DB5633 /* Extension.swift in Sources */,
+				1E3A9AF9282C192F00DB5633 /* Utility.swift in Sources */,
+				1E45B673282C5FD6006803C5 /* Detail+CoreDataClass.swift in Sources */,
+				1E3A9AF2282C178700DB5633 /* WebService+Extension.swift in Sources */,
+				1E45B660282C45F8006803C5 /* DetailViewModel.swift in Sources */,
+				1E45B67A282C602C006803C5 /* Movies+CoreDataProperties.swift in Sources */,
+				1E3A9AEB282C125300DB5633 /* DetailVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1E3A9AD5282C0AA500DB5633 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E3A9AD6282C0AA500DB5633 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1E3A9ADD282C0AA700DB5633 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E3A9ADE282C0AA700DB5633 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1E3A9AE1282C0AA700DB5633 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1E3A9AE2282C0AA700DB5633 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E3A9AE4282C0AA700DB5633 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A11C424EE9722831A3C0B0AC /* Pods-KinjalPractical.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JFZ2W7RK38;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KinjalPractical/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.practical-Kinjal.KinjalPractical";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1E3A9AE5282C0AA700DB5633 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D33F6988239658CA2C6E3A4 /* Pods-KinjalPractical.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JFZ2W7RK38;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KinjalPractical/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.practical-Kinjal.KinjalPractical";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E3A9AC7282C0AA500DB5633 /* Build configuration list for PBXProject "KinjalPractical" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E3A9AE1282C0AA700DB5633 /* Debug */,
+				1E3A9AE2282C0AA700DB5633 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E3A9AE3282C0AA700DB5633 /* Build configuration list for PBXNativeTarget "KinjalPractical" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E3A9AE4282C0AA700DB5633 /* Debug */,
+				1E3A9AE5282C0AA700DB5633 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1E3A9AD8282C0AA500DB5633 /* KinjalPractical.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1E3A9AD9282C0AA500DB5633 /* KinjalPractical.xcdatamodel */,
+			);
+			currentVersion = 1E3A9AD9282C0AA500DB5633 /* KinjalPractical.xcdatamodel */;
+			path = KinjalPractical.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1E3A9AC4282C0AA500DB5633 /* Project object */;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E258" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Detail" representedClassName="Detail" syncable="YES">
+        <attribute name="budget" optional="YES" attributeType="String"/>
+        <attribute name="coverimage" optional="YES" attributeType="Binary"/>
+        <attribute name="duration" optional="YES" attributeType="String"/>
+        <attribute name="generes" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="language" optional="YES" attributeType="String"/>
+        <attribute name="overview" optional="YES" attributeType="String"/>
+        <attribute name="productioncomapny" optional="YES" attributeType="String"/>
+        <attribute name="releasedate" optional="YES" attributeType="String"/>
+        <attribute name="revenue" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Movies" representedClassName="Movies" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="subtitle" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Movies" positionX="-63" positionY="-18" width="128" height="89"/>
+        <element name="Detail" positionX="-45" positionY="27" width="128" height="179"/>
+    </elements>
+</model>

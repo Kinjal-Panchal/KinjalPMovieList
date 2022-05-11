@@ -20,9 +20,10 @@ class MovieListVC: UIViewController {
     var pagelimit = 20
     var refreshControl = UIRefreshControl()
     
-    
+    //MARK: ====== View Controller life cycle =====
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchMovieData()
         refreshControl.addTarget(self, action:
                    #selector(self.handleRefresh(_:)),
                                         for: UIControl.Event.valueChanged)
@@ -33,7 +34,7 @@ class MovieListVC: UIViewController {
         movieviewmodel.webserviceCallMovieList(isShowHud: true, Page:pageNo)
         self.navigationItem.title = "MovieList"
     }
-    
+    //MARK: Latest reload =====
     func latestReload(){
         pageNo = 1
         isneedToReload = false
@@ -41,16 +42,26 @@ class MovieListVC: UIViewController {
 
     }
     
+    //MARK: ===== Load more data =====
     func ReloadMore(){
         pageNo += 1
         isneedToReload = false
         movieviewmodel.webserviceCallMovieList(isShowHud: true, Page:pageNo)
-
     }
     
+    //MARK: ==== refresh control to refresh ======
     @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
-        
         movieviewmodel.webserviceCallMovieList(isShowHud: false, Page:1)
+    }
+    
+    //MARK: ===== Data Fetch in coreData =====
+    func fetchMovieData(){
+        DBManager.shared.getmovieList()
+        print(DBManager.shared.getmovieList())
+        let objData = DBManager.shared.getmovieList()
+        for i in objData {
+            print(i.title)
+        }
     }
 }
 
@@ -72,6 +83,10 @@ extension MovieListVC : UITableViewDataSource,UITableViewDelegate {
         if isneedToReload == true && indexPath.row == arrMovies.count - 4 {
             ReloadMore()
         }
+        //MARK: ===== Save Data in coreData =====
+        let obj = MovieData(movietitle: arrMovies[indexPath.row].originalTitle, releasedate: arrMovies[indexPath.row].releaseDate, posterimage: cell.imgPoster.image?.pngData(), description: arrMovies[indexPath.row].overview)
+        DBManager.shared.addMovieList(obj)
+
         return cell
         
         }

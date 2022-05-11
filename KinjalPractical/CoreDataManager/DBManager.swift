@@ -91,19 +91,20 @@ class DBManager{
         }
     }
     
-//    // MARK: - Add New MovieList
+    // MARK: - Add New MovieList
     func addMovieList(_ movieData: MovieData) {
         var objmoviesList : Movies
         objmoviesList = Movies(context: self.context)
         objmoviesList.title = movieData.movietitle ?? ""
         objmoviesList.subtitle = movieData.description ?? ""
-        objmoviesList.image = movieData.posterimage!
+        objmoviesList.image = movieData.posterimage ?? Data()
         objmoviesList.date = movieData.releasedate ?? ""
-
         self.saveContext()
     }
     
-    
-    
+    func deleteMovie(){
+        let objMovie = Movies(context: self.context)
+        deleteObjectContext(objMovie)
+    }
 }
 

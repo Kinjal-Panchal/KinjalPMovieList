@@ -21,7 +21,7 @@ class MovieListViewModel{
             return
         }
         movieListVC?.refreshControl.endRefreshing()
-       
+       // DBManager.shared.deleteMovie()
         let url = URL(string: "https://api.themoviedb.org/3/discover/movie?api_key=\(ApiKey.strApiKey.rawValue)&page=\(Page)")!
           URLSession.shared.fetchData(for: url) { (result: Result<RootMovieList, Error>) in
               Utility.hideHUD()
@@ -31,6 +31,7 @@ class MovieListViewModel{
                 if model.results?.count != 0 {
                     if self.movieListVC?.pagelimit == model.results?.count{
                         self.movieListVC?.isneedToReload = true
+                        
                     }
                     else{
                         self.movieListVC?.isneedToReload = false

@@ -37,6 +37,7 @@ class DetailVC: UIViewController {
         detailViewModel.webserviceCallMovieDetail(movieId:strMovieId)
     }
     
+    //MARK: == DataSetup ====
     func dataSetup(){
         Utility.imageGet(url: UrlConstant.imgPoster + (objDetail?.posterPath ?? ""), img: imgPoster)
         Utility.imageGet(url: UrlConstant.imgcover + (objDetail?.backdropPath ?? ""), img: imgCover)

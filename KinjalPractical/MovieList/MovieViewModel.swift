@@ -34,6 +34,7 @@ class MovieListViewModel{
                     }
                     else{
                         self.movieListVC?.isneedToReload = false
+                        
                     }
                     
                     if Page == 1 {
@@ -42,6 +43,7 @@ class MovieListViewModel{
                     else {
                         self.movieListVC?.arrMovies.append(contentsOf:model.results!)
                     }
+                    
                     
                     DispatchQueue.main.async {
                         self.movieListVC?.tblList.reloadData()
